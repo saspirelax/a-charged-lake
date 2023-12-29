@@ -1,0 +1,41 @@
+
+/* Header */
+.header_fixed {
+    text-align: right;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    position: fixed;
+}
+.header_type {
+    /* border: 1px solid brown; */
+    margin: 0;
+}
+
+.rotate_animate {
+    color: aquamarine; 
+    /* Style for the element */
+    animation: wobble 3s ease-in-out infinite; /* Adjust duration and timing function */
+    opacity: 80%;
+    transform-origin: top;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Keyframes for the wobbling animation */
+  @keyframes wobble {
+    0% { transform: translateX(-2rem); }
+    25% { transform: translateX(2rem) rotate(-5deg); }
+    50% { transform: translateX(-2rem) rotate(5deg); }
+    75% { transform: translateX(2rem) rotate(-3deg); }
+    100% { transform: translateX(-2rem); }
+  }
+
+/* Images Container */
+
+img {
+    border: 2px solid fuchsia;
+    border-radius: 1rem; 
+    mix-blend-mode:difference;
+}
+
+/* Body Text Custom */
