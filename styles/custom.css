@@ -19,6 +19,7 @@
     transform-origin: top;
     padding: 0;
     margin: 0;
+    mix-blend-mode:difference;
   }
   
   /* Keyframes for the wobbling animation */
@@ -30,12 +31,34 @@
     100% { transform: translateX(-2rem); }
   }
 
-/* Images Container */
+/* Image Containers */
+
+.grid_link {
+  padding: 2rem;
+  border-radius: 0.2rem;
+  background-color: #141E26;
+  
+}
 
 img {
-    border: 2px solid fuchsia;
-    border-radius: 1rem; 
-    mix-blend-mode:difference;
+    border: 2px solid white;
+    border-radius: 0.5rem; 
+    /* mix-blend-mode:difference; */
+
+}
+
+/* Image Effect */
+
+.profile_container {
+  height: 100%; /* Example height of the container */
+  overflow: hidden; /* Hide overflow content outside the container */
+  display: flex;
+}
+
+.cropped_image {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Crop and cover the entire container */
 }
 
 /* Body Text Custom */
