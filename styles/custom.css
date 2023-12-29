@@ -43,7 +43,7 @@
 img {
     border: 2px solid white;
     border-radius: 0.5rem; 
-    /* mix-blend-mode:difference; */
+    mix-blend-mode:exclusion;
 
 }
 
