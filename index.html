@@ -3,24 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS\pico.min.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="node/node_modules/@picocss/pico/css/pico.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <title>A Charged Lake</title>
   </head>
   <body>
+<!-- Fixed Header Container -->
+    <main class="header_fixed">
+      <div class="container">
+        <h1 class="header_type">Jonathan George Fox</h1>
+        <h1 class="rotate_animate header_type">...is a Charged Lake</h1>
+      </div>
+    </main>
+<!-- About Container -->
     <main class="container">
+      <img src="https://i0.wp.com/jonathangeorgefox.com/wp-content/uploads/2022/08/IMG_0036.jpg?resize=600%2C600&ssl=1" alt="Jonathan standing in a windy field wearing a hood, they are pulling the hood cords into a bow">
+      <div style="height: 4rem;"></div>
       <h1>About</h1>
-      <h2>A Charged Lake 🌀</h2>
-      <p>Jonathan George Fox <em>(they/them/he) is an Artist and Designer who lives in South Yorkshire.</em></p><br>
-      <h3>Music</h3>
-      <p>Explore their art and writing, <a href="flightcoda.com">visit flightcoda.com</a></p><br>
-      <h4>Services Available</h4>
-      <p>Jonathan offers a range of services in audio, video and image production</p>
-      <ul>
-        <li>Mixing & Mastering</li>
-        <li>Constructive and Inspirational Feedback</li>
-        <li>Locaion Recording and Sampling</li>
-        <li>Ableton Live Tuition</li>
-      </ul>
+      <p>Jonathan George Fox <em>(they/them/he)</em> is an Artist and Designer who lives in South Yorkshire.
+      </p>
+      <hr>
+
+<!-- Links and Services Grid -->
+      <div class="grid">
+        <div id="Music Heading">
+          <h2>Music</h2>
+          <p>Explore their art and writing, <a href="flightcoda.com">visit flightcoda.com</a></p><br>
+          <img src="https://i0.wp.com/flightcoda.com/wp-content/uploads/2022/12/cassette-tape-mockup-a-window-at-night-the-27th-flight-coda-e1672331482257-edited.jpeg?w=662&ssl=1" alt="Flight Coda cassette product shot">
+          
+        </div>
+        <div><h3>Services Available</h3>
+          <p>Jonathan offers a range of services in audio, video and image production</p>
+          <ul>
+            <li>Mixing & Mastering</li>
+            <li>Constructive and Inspirational Feedback</li>
+            <li>Locaion Recording and Sampling</li>
+            <li>Ableton Live Tuition</li>
+          </ul>
+        </div>
+      </div>
       </div>
     </main>
   </body>
