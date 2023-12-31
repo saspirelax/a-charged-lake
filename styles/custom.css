@@ -1,3 +1,40 @@
+/* Purple Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #8e24aa;
+  --primary-hover: #7b1fa2;
+  --primary-focus: rgba(142, 36, 170, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Purple Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #8e24aa;
+    --primary-hover: #9c27b0;
+    --primary-focus: rgba(142, 36, 170, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Purple Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #8e24aa;
+  --primary-hover: #9c27b0;
+  --primary-focus: rgba(142, 36, 170, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Purple (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
 
 /* Header */
 .header_fixed {
@@ -11,22 +48,18 @@
     margin: 0;
 }
 
-.rotate_animate {
-    color: aquamarine; 
+.rotate_animate { 
     /* Style for the element */
-    animation: wobble 3s ease-in-out infinite; /* Adjust duration and timing function */
-    opacity: 80%;
-    transform-origin: top;
-    padding: 0;
-    margin: 0;
+    animation: wobble 6s ease-in-out infinite; /* Adjust duration and timing function */
+    transform-origin: center;
     mix-blend-mode:difference;
   }
   
   /* Keyframes for the wobbling animation */
   @keyframes wobble {
     0% { transform: translateX(-1rem); }
-    25% { transform: translateX(1rem) rotate(-5deg); }
-    50% { transform: translateX(-1rem) rotate(5deg); }
+    25% { transform: translateX(1rem) rotate(-10deg); }
+    50% { transform: translateX(-1rem) rotate(10deg); }
     75% { transform: translateX(1rem) rotate(-3deg); }
     100% { transform: translateX(-1rem); }
   }

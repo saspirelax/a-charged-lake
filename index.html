@@ -3,37 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node/node_modules/@picocss/pico/css/pico.min.css">
     <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="node/node_modules/@picocss/pico/css/pico.min.css">
     <title>A Charged Lake</title>
   </head>
+
   <body>
-<!-- Fixed Header Container -->
-    <main class="header_fixed">
-      <div class="container">
-        <h5 class="header_type">Jonathan George Fox</h5>
-        <h5 class="rotate_animate header_type">...is a Charged Lake</h5>
-      </div>
-    </main>
-    <div style="height: 2rem;"></div>
-<!-- About Container -->
+     <!-- navigation -->
+  <header class="container">
+      <nav>
+          <ul>
+            <li><strong>Jonathan George Fox</strong></li>
+          </ul>
+          <ul>
+            <li class="rotate_animate header_type"><mark>...is a Charged Lake</mark></li>
+          </ul>
+          <ul>
+            <li>About</li>
+            <li><a href="#" role="button">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+<!-- main -->
     <main class="container">
+      <!-- About Container -->
       <div class="grid">
-        <div class="profile_container">
-          <img class="cropped_image" src="https://i0.wp.com/jonathangeorgefox.com/wp-content/uploads/2022/08/IMG_0036.jpg?resize=600%2C600&ssl=1">
+        <div>
+          <img src="https://i0.wp.com/jonathangeorgefox.com/wp-content/uploads/2022/08/IMG_0036.jpg?resize=600%2C600&ssl=1">
         </div>
-        <div style="display: flex; align-items: flex-end;">
-          <div class="headings">
-          <h1>About</h1>
-          <h3>Jonathan George Fox <em>(they/them/he)</em> is an Artist and Designer who lives in South Yorkshire.
-          </h3>
-          </div>
-        </div>
+          <hgroup>
+            <h1>About</h1>
+            <p>Jonathan George Fox <em>(they/them/he)</em> is an Artist and Designer who lives in South Yorkshire.</p>
+            <p>Jonathan releases music under various handles; Flight Coda being the primary, focusing on “Dreamtime micro-symphonies” from their home in Sheffield.</p>
+          </hgroup>
       </div>
 
 <!-- Links Grid -->
-      <div class="grid">
-        <figure class="grid_link">
+      <figure class="grid">
+        <div>
           <article>
             <h2>Flight Coda</h2>
             <p>Out now on Warm Winters Ltd.</p>
@@ -41,17 +49,17 @@
             <figcaption>'awant27' cassette product</figcaption>
             <p>Read and listen, <a href="flightcoda.com">visit flightcoda.com</a></p>
           </article>
-        </figure>
+        </div>
         <!-- <div style="height: 1rem; width: 1rem;"></div> -->
-        <figure class="grid_link headings">
+        <div>
           <article>
             <img src="https://i0.wp.com/jonathangeorgefox.com/wp-content/uploads/2022/05/Album-Art-IMG_0323-small.jpeg?resize=1050%2C1050&ssl=1">
             <h3>Sentry</h3>
             <figcaption>Perfect Blue Bubbles</figcaption>
             <p>Out Now On Jollies Records, <a href="https://jollies.bandcamp.com/?from=btl">Listen here</a></p>
           </article>
-        </figure>
-      </div>
+        </div>
+      </figure>
       
 <!-- Services Area -->
       <article>
