@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="node/node_modules/@picocss/pico/css/pico.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
     <title>A Charged Lake</title>
   </head>
 
@@ -27,6 +27,7 @@
 
 <!-- main -->
     <main class="container">
+      
       <!-- About Container -->
       <div class="grid">
         <div>
@@ -39,20 +40,22 @@
           </hgroup>
       </div>
 
-<!-- Links Grid -->
+      <!-- News Grid Cards -->
       <figure class="grid">
         <div>
-          <article>
-            <h2>Flight Coda</h2>
-            <p>Out now on Warm Winters Ltd.</p>
+          <article data-theme="light">
             <img src="https://i0.wp.com/flightcoda.com/wp-content/uploads/2022/12/cassette-tape-mockup-a-window-at-night-the-27th-flight-coda-e1672331482257-edited.jpeg?w=662&ssl=1" alt="Flight Coda cassette product shot">
-            <figcaption>'awant27' cassette product</figcaption>
-            <p>Read and listen, <a href="flightcoda.com">visit flightcoda.com</a></p>
+              <hgroup>
+                <h2>Flight Coda</h2>
+                <figcaption>'awant27' cassette product</figcaption>
+                <p>Out now on Warm Winters Ltd.</p>
+                <p>Read and listen, <a href="flightcoda.com">visit flightcoda.com</a></p>
+              </hgroup>
           </article>
         </div>
-        <!-- <div style="height: 1rem; width: 1rem;"></div> -->
+      
         <div>
-          <article>
+          <article data-theme="light">
             <img src="https://i0.wp.com/jonathangeorgefox.com/wp-content/uploads/2022/05/Album-Art-IMG_0323-small.jpeg?resize=1050%2C1050&ssl=1">
             <h3>Sentry</h3>
             <figcaption>Perfect Blue Bubbles</figcaption>
@@ -61,7 +64,7 @@
         </div>
       </figure>
       
-<!-- Services Area -->
+      <!-- Services Area -->
       <article>
         <Header><h4>Services Available</h4><p>Jonathan offers a range of services in audio, video and image production</p></Header>
           <ul>
