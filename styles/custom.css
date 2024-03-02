@@ -11,11 +11,10 @@
     margin: 0;
 }
 
-.rotate_animate {
-    color: aquamarine; 
+.rotate_animate { 
     /* Style for the element */
-    animation: wobble 3s ease-in-out infinite; /* Adjust duration and timing function */
-    opacity: 80%;
+    animation: wobble 2s cubic-bezier(1, 0, 0, 1) infinite; /* Adjust duration and timing function */
+    opacity: 40%;
     transform-origin: top;
     padding: 0;
     margin: 0;
@@ -24,11 +23,11 @@
   
   /* Keyframes for the wobbling animation */
   @keyframes wobble {
-    0% { transform: translateX(-1rem); }
-    25% { transform: translateX(1rem) rotate(-5deg); }
-    50% { transform: translateX(-1rem) rotate(5deg); }
-    75% { transform: translateX(1rem) rotate(-3deg); }
-    100% { transform: translateX(-1rem); }
+    0% { transform: translateX(-0.5rem); }
+    25% { transform: translateX(0.5rem) rotate(-1deg); }
+    50% { transform: translateX(-0.5rem) rotate(2deg); }
+    75% { transform: translateX(0.5rem) rotate(-1deg); }
+    100% { transform: translateX(-0.5rem); }
   }
 
 /* Image Containers */
@@ -36,13 +35,14 @@
 .grid_link {
   padding: 1rem;
   border-radius: 0.5rem;
+  overflow: visible;
   /* border: 2px solid white; */
   
 }
 
 img {
     border: 2px solid white;
-    border-radius: 0.5rem;
+    border-radius: .3em;
 
 }
 
@@ -52,12 +52,15 @@ img {
   height: 100%; /* Example height of the container */
   overflow: hidden; /* Hide overflow content outside the container */
   display: flex;
+  padding: 1em;
+  
 }
 
 .cropped_image {
   width: 100%; /* Make the image fill the container */
   height: auto; /* Maintain image aspect ratio */
-  object-fit: cover; /* Crop and cover the entire container */
+  object-fit:scale-down; /* Crop and cover the entire container */
+  border-radius: .3em;
 }
 
 /* Body Text Custom */
