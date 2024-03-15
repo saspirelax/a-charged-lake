@@ -1,66 +1,99 @@
-
 /* Header */
 .header_fixed {
-    text-align: right;
-    /* border: 1px solid white; */
-    padding: 1rem;
-    position: fixed;
-}
-.header_type {
-    /* border: 1px solid brown; */
-    margin: 0;
+  text-align: right;
+  /* border: 1px solid white; */
+  padding: 2rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 0;
 }
 
-.rotate_animate { 
-    /* Style for the element */
-    animation: wobble 2s cubic-bezier(1, 0, 0, 1) infinite; /* Adjust duration and timing function */
-    opacity: 40%;
-    transform-origin: top;
-    padding: 0;
-    margin: 0;
-    mix-blend-mode:difference;
+.header_type {
+  /* border: 1px solid brown; */
+  margin: inherit;
+  z-index: 0;
+}
+
+.rotate_animate {
+  /* Style for the element */
+  animation: wobble 2s cubic-bezier(1, 0, 0, 1) infinite;
+  /* Adjust duration and timing function */
+  opacity: 40%;
+  transform-origin: top;
+  padding: 0;
+  margin: 0;
+  mix-blend-mode: difference;
+}
+
+/* Keyframes for the wobbling animation */
+@keyframes wobble {
+  0% {
+    transform: translateX(-0.5rem);
   }
-  
-  /* Keyframes for the wobbling animation */
-  @keyframes wobble {
-    0% { transform: translateX(-0.5rem); }
-    25% { transform: translateX(0.5rem) rotate(-1deg); }
-    50% { transform: translateX(-0.5rem) rotate(2deg); }
-    75% { transform: translateX(0.5rem) rotate(-1deg); }
-    100% { transform: translateX(-0.5rem); }
+
+  25% {
+    transform: translateX(0.5rem) rotate(-1deg);
   }
+
+  50% {
+    transform: translateX(-0.5rem) rotate(2deg);
+  }
+
+  75% {
+    transform: translateX(0.5rem) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateX(-0.5rem);
+  }
+}
 
 /* Image Containers */
 
 .grid_link {
-  padding: 1rem;
+  /* padding: .1rem; */
   border-radius: 0.5rem;
   overflow: visible;
   /* border: 2px solid white; */
-  
+
 }
 
 img {
-    border: 2px solid white;
-    border-radius: .3em;
+  border-radius: .3em;
 
 }
 
 /* Image Effect */
 
 .profile_container {
-  height: 100%; /* Example height of the container */
-  overflow: hidden; /* Hide overflow content outside the container */
+  overflow: hidden;
+  /* Hide overflow content outside the container */
+  margin-bottom: 1rem;
+  background-color: #181A19;
+  /* border-radius: 1em; */
   display: flex;
-  padding: 1em;
-  
+  flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+  max-height: 150px;
+  border-bottom: solid 1dvb black;
+  z-index: 7;
+  position: relative;
+
+
 }
 
 .cropped_image {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain image aspect ratio */
-  object-fit:scale-down; /* Crop and cover the entire container */
-  border-radius: .3em;
+  object-fit: cover;
+  /* Crop and cover the entire container */
+  filter: brightness(0.8);
+  max-height: inherit;
+  min-height: 300px;
+
 }
+
+
 
 /* Body Text Custom */

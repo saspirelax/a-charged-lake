@@ -24,7 +24,7 @@ function swapText() {
 
         }
     } else {
-        console.log("No elements found with thfffe specified class name.");
+        console.log("No elements found with the specified class name.");
     }
 }
 

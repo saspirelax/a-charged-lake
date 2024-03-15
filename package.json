@@ -1,0 +1,22 @@
+{
+  "name": "a-charged-lake",
+  "version": "1.0.0",
+  "description": "Website for artist Jonathan George Fox.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Artist",
+    "Portfolio",
+    "Pico",
+    "Css",
+    "Landing",
+    "page"
+  ],
+  "author": "Jonathan George Fox",
+  "license": "ISC",
+  "dependencies": {
+    "@picocss/pico": "^2.0.6"
+  }
+}
