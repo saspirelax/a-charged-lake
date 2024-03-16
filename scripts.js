@@ -1,32 +1,35 @@
-function swapText() {
-    // Get all elements with the class name "text-to-change"
-    var elements = document.getElementsByClassName("rotate_animate");
+function cycleText() {
+    const elements = document.getElementsByClassName("rotate_animate");
+    const phrases = ["...is a charged lake", "...committed to contrast"];
+    let currentIndex = 0;
 
-    // Check if there are any elements with the specified class
-    if (elements.length > 0) {
-        // Loop through each element and change its text
-        for (var i = 0; i < elements.length; i++) {
-            let currentText = elements[i].innerHTML;
-
-            //Set the origin word
-            let originPhrase = "...is a Charged Lake";
-
-            //initialise the array variable
-            let arrayNo = 0;
-            //Make an array of options
-            const phraseArray = ["...is a charged lake", "...committed to contrast"]
-
-            // Swap the text as per your requirement
-            let newText = currentText.replace(originPhrase, phraseArray[arrayNo]);
-
-            // Assign the new text to the element
-            elements[i].innerHTML = newText;
-
+    setInterval(() => {
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = phrases[currentIndex];
         }
-    } else {
-        console.log("No elements found with the specified class name.");
-    }
+        currentIndex = (currentIndex + 1) % phrases.length;
+    }, 2000);
 }
 
-swapText();
+// Call the function to start cycling text
+cycleText();
+
+
+// animation logo
+
+// const circle = document.querySelector('#fcSymbol circle');
+
+// let strokeWidth = 1;
+// let direction = 1;
+
+// function animateStrokeWidth() {
+//   strokeWidth += direction;
+//   if (strokeWidth >= 80 || strokeWidth <= 1) {
+//     direction *= -1;
+//   }
+//   circle.setAttribute('stroke-width', strokeWidth);
+//   requestAnimationFrame(animateStrokeWidth);
+// }
+
+// animateStrokeWidth();
 

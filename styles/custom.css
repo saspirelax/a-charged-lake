@@ -5,15 +5,20 @@
   padding: 2rem;
   position: fixed;
   display: flex;
-  flex-direction: row-reverse;
-  z-index: 0;
-  filter: blur(1px);
+  z-index: 1;
+  filter: blur(0px);
 }
 
 .header_type {
   /* border: 1px solid brown; */
   margin: inherit;
   z-index: 0;
+}
+
+.headerImage {
+  filter: brightness(.7);
+  z-index: 0;
+  position: relative;
 }
 
 .rotate_animate {
@@ -61,7 +66,7 @@
 }
 
 img {
-  border-radius: .3em;
+  /* border-radius: .3em; */
 
 }
 
@@ -93,6 +98,8 @@ img {
 
 }
 
-
+.fcSymbol {
+  width: 4rem;
+}
 
 /* Body Text Custom */
