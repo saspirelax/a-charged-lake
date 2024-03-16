@@ -71,7 +71,6 @@ img {
   overflow: hidden;
   /* Hide overflow content outside the container */
   margin-bottom: 1rem;
-  background-color: #181A19;
   /* border-radius: 1em; */
   display: flex;
   flex-direction: row;
@@ -79,7 +78,6 @@ img {
 	align-items: center;
 	align-content: stretch;
   max-height: 150px;
-  border-bottom: solid 1dvb black;
   z-index: 7;
   position: relative;
 
