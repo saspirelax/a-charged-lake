@@ -103,3 +103,7 @@ img {
 }
 
 /* Body Text Custom */
+
+.articleImage {
+  border-radius: inherit;
+}
